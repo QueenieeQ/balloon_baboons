@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TableLayout
+        android:id="@+id/product_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:stretchColumns="*">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/id_header"
+                android:text="ID"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/name_header"
+                android:text="Name"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/price_header"
+                android:text="Price"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/quality_header"
+                android:text="Quality"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/date_header"
+                android:text="Date"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+        </TableRow>
+
+        <!-- Add a row for each product -->
+        <TableRow>
+            <TextView
+                android:id="@+id/product_id"
+                android:text="1"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/product_name"
+                android:text="Product A"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/product_price"
+                android:text="$10.00"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/product_quality"
+                android:text="High"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/product_date"
+                android:text="2023-03-16"
+                android:padding="8dp"/>
+        </TableRow>
+
+        <!-- Add additional rows for each product as needed -->
+
+        <!-- Add an empty row with layout_weight to push the create button to the bottom -->
+        <TableRow
+            android:layout_weight="1"/>
+
+        <!-- Add the create product button row at the bottom -->
+        <TableRow>
+            <Button
+                android:id="@+id/create_product_button"
+                android:text="Create Product"
+                android:layout_span="5"
+                android:layout_gravity="center_horizontal"
+                android:padding="8dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
